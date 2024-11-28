@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>VelaScent - Ilumina tu vida</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/Logo_Vela.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- Aquí agregamos la personalización del fondo morado -->
+        <style>
+            .bg-primary {
+                background-color: #830cc4 !important; /* Morado */
+            }
+            .btn-primary {
+                background-color: #830cc4; /* Color morado */
+                border-color: #830cc4; /* Borde morado */
+            }
+
+            .btn-primary:hover {
+                background-color: #9932CC; /* Morado más claro al pasar el mouse */
+                border-color: #9932CC;
+            }
+
+        </style>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">VelaScent</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menú
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#catalogo">Catálogo</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Acerca de Nosotros</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contacto">Contacto</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#crud">Gestión de Datos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                <img class="masthead-avatar mb-5" src="assets/img/Logo.jpeg" alt="..." />
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-0">VelaScent</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0">Ilumina tu vida y siente la esencia - Velas aromáticas</p>
+            </div>
+        </header>
+        <!-- Portfolio Section-->
+        <section class="page-section portfolio" id="catalogo">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Catálogo</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/Flor_Dalia.jpeg" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/Burbujas.jpeg" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/Angelitos.jpeg" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 4-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/Flor_centroEstrella.jpeg" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 5-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/Nube.jpeg" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 6-->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/Ositos.jpeg" alt="..." />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section-->
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">Acerca de nosotros</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="col-lg-4 ms-auto"><p class="lead">En VelaScent, nos especializamos en velas aromáticas 100% hechas a mano con mucho amor. Cada vela es creada con esmero, y ofrecemos una amplia gama de colores, aromas y fragancias personalizadas para que puedas encontrar la opción perfecta para ti. Además, contamos con diseños únicos para cada ocasión, lo que hace que nuestras velas sean el detalle ideal para cualquier espacio o evento.</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">Aunque somos una tienda virtual ubicada en Medellín, realizamos envíos a cualquier parte para que puedas disfrutar de nuestras velas sin importar dónde te encuentres. ¡Haz de tu espacio un lugar lleno de esencia y calidez con VelaScent!<br />Para una atención más personalizada o si deseas diseñar una vela única, comunícate con nosotros a través de WhatsApp:</p></div>
+                </div>
+                <!-- About Section Button-->
+                <div class="text-center mt-4">
+                    <a class="btn btn-xl btn-outline-light" href="https://wa.me/c/573505506562" target="_blank">
+                        <i class="fas fa-comment me-2"></i>
+                        Contáctanos por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section-->
+        <section class="page-section" id="contacto">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contáctame</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Contact Section Form-->
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-7">
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+                        <form id="contactForm" action="servlet-registro" method="post" data-sb-form-api-token="API_TOKEN">
+
+                            <!-- ID Number input (Nuevo campo) -->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="idNumber" type="text" name="id" placeholder="Ingrese su número de identificación..." data-sb-validations="required" />
+                                <label for="idNumber">Número de identificación *</label>
+                                <div class="invalid-feedback" data-sb-feedback="idNumber:required">El campo es obligatorio.</div>
+                            </div>
+
+                            <!-- Name input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" type="text" name="nombre" placeholder="Ingrese su nombre..." data-sb-validations="required" />
+                                <label for="name">Nombre *</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">El campo es obligatorio.</div>
+                            </div>
+                            <!-- Email address input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" type="email" name="correo" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <label for="email">Correo electrónico *</label>
+                                <div class="invalid-feedback" data-sb-feedback="email:required">El campo es obligatorio.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">El correo electrónico no es válido.</div>
+                            </div>
+                            <!-- Phone number input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="phone" type="tel" name="celular" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                <label for="phone">Número de celular *</label>
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">El campo es obligatorio.</div>
+                            </div>
+                            <!-- Dropdown de opciones de velas -->
+                            <div class="form-floating mb-3">
+                                <select class="form-control" id="vela" name="tipovela" data-sb-validations="required">
+                                    <option value="" disabled selected>Seleccione una vela...</option>
+                                    <option value="flor-dalia">Flor Dalia</option>
+                                    <option value="burbujas">Burbujas</option>
+                                    <option value="angelitos">Angelitos</option>
+                                    <option value="flor-estrella">Flor Centro Estrella</option>
+                                    <option value="nube">Nube</option>
+                                    <option value="ositos">Ositos</option>
+                                </select>
+                                <label for="vela">Tipo de vela *</label>
+                                <div class="invalid-feedback" data-sb-feedback="vela:required">Seleccione una opción.</div>
+                            </div>
+                            <!-- Message input-->
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" name="mensaje" placeholder="Escriba su mensaje aquí..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <label for="message">Mensaje *</label>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">El campo es obligatorio.</div>
+                            </div>
+                            
+                            <input value="registrar" type="submit"/>
+                            
+                            <!-- Submit success message-->
+                            <!---->
+                            <!-- This is what your users will see when the form-->
+                            <!-- has successfully submitted-->
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder">¡El envío del formulario fue exitoso!</div>
+                                </div>
+                            </div>
+                            <!-- Submit error message-->
+                            <!---->
+                            <!-- This is what your users will see when there is-->
+                            <!-- an error submitting the form-->
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error al enviar mensaje!</div></div>
+                            <!-- Submit Button-->
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CRUD Section -->
+        <section class="page-section bg-light" id="crud">
+            <div class="container">
+                <!-- CRUD Section Heading -->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Gestión de Datos</h2>
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-database"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- CRUD Form -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-7">
+                        <!-- Formulario de CRUD -->
+                        <form id="crudForm" action="crud" method="post">
+                            <!-- ID Search -->
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="searchId" name="id" placeholder="Buscar por ID" required>
+                                <label for="searchId">Buscar por ID *</label>
+                            </div>
+                            <div class="d-grid mb-3">
+                                <button type="button" class="btn btn-primary" id="btnSearch">Buscar</button>
+                            </div>
+                            <!-- Editable Fields -->
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+                                <label for="nombre">Nombre *</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo Electrónico">
+                                <label for="correo">Correo Electrónico *</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="tel" class="form-control" id="celular" name="celular" placeholder="Número de Celular">
+                                <label for="celular">Número de Celular *</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="tipovela" name="tipovela" placeholder="Tipo de Vela">
+                                <label for="tipovela">Tipo de Vela *</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+                                <label for="mensaje">Mensaje</label>
+                            </div>
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between">
+                                <button type="submit" class="btn btn-warning" name="action" value="update">Actualizar</button>
+                                <button type="submit" class="btn btn-danger" name="action" value="delete">Eliminar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- JavaScript Section -->
+        <script>
+            document.getElementById("btnSearch").addEventListener("click", function () {
+                // Obtén el ID ingresado
+                const id = document.getElementById("searchId").value;
+
+                if (id.trim() === "") {
+                    alert("Por favor, ingresa un ID válido.");
+                    return;
+                }
+
+                // Realiza la solicitud al servidor
+                fetch("crud", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded",
+                    },
+                    body: new URLSearchParams({
+                        action: "read",
+                        id: id,
+                    }),
+                })
+                    .then((response) => {
+                        if (!response.ok) {
+                            throw new Error("Error al buscar el registro.");
+                        }
+                        return response.json(); // Parsear el JSON
+                    })
+                    .then((data) => {
+                        // Rellenar los campos del formulario
+                        document.getElementById("nombre").value = data.nombre || "";
+                        document.getElementById("correo").value = data.correo || "";
+                        document.getElementById("celular").value = data.celular || "";
+                        document.getElementById("tipovela").value = data.tipovela || "";
+                        document.getElementById("mensaje").value = data.mensaje || "";
+                    })
+                    .catch((error) => {
+                        alert("No se encontró el registro o ocurrió un error.");
+                        console.error(error);
+                    });
+            });
+        </script>
+        
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Ubicación</h4>
+                        <p class="lead mb-0">
+                            Medellín, Barrio Carlos E. Restrepo
+                        </p>
+                    </div>
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Redes sociales</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://wa.me/c/573505506562" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <!-- Instagram -->
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/velascent_med/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <!-- TikTok -->
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.tiktok.com/@velascent_med?lang=es" target="_blank">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                    <!-- Footer About Text-->
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">VelaScent</h4>
+                        <p class="lead mb-0">Ilumina tu vida y siente la esencia.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright &copy; Your Website 2023</small></div>
+        </div>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Flor Dalia</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Flor_Dalia.jpeg" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Nuestra vela Flor Dalia está inspirada en la belleza de las flores más delicadas. Con un diseño con relieve que resalta las distintas capas de pétalos, esta vela en un hermoso color azul claro mide 8 cm de diámetro y 4 cm de altura. Su fragancia sutil combina perfectamente con su diseño, creando un ambiente armonioso y lleno de frescura. Ideal para añadir un toque floral a cualquier espacio.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Burbujas</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Burbujas.jpeg" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Nuestra vela Burbujas es el detalle perfecto para dar un toque moderno y elegante a cualquier espacio. De color morado, esta vela está inspirada en las burbujas de aire, con un diseño minimalista que refleja la frescura y la tranquilidad. Con una medida de 6 cm de diámetro y 3 cm de alto, es ideal para centros de mesa o pequeños rincones que necesiten un toque de color y paz. Su fragancia sutil complementa la experiencia visual.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Angelitos</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Angelitos.jpeg" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Nuestros Angelitos son velas en forma de pequeños ángeles, tanto de niño como de niña. Estas hermosas figuras en colores suaves de azul y rosado emiten un delicado aroma a vainilla y canela, lo que las convierte en el detalle perfecto para cualquier ambiente. Cada vela mide aproximadamente 6 cm de alto y 4 cm de ancho. Son ideales para regalar en ocasiones especiales o para decorar tu hogar con un toque celestial.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Flor centro Estrella</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Flor_centroEstrella.jpeg" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Flor Centro Estrella es la vela que aportará un toque de sofisticación a tu hogar. Con una hermosa forma de flor, el centro de la vela se convierte en una estrella que se ilumina suavemente cuando la vela está encendida. En un elegante color morado y con el dulce aroma a vainilla, esta vela mide 9 cm de diámetro y 5 cm de altura. Es perfecta para momentos de relajación o como un regalo encantador.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 5-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Nube</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Nube.jpeg" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Sumérgete en un toque de suavidad con nuestra vela Nube, una delicada forma de nube en color azul pastel que evoca la calma y la serenidad. Con un exquisito aroma a vainilla, esta vela crea un ambiente acogedor y reconfortante. Mide 8 cm de diámetro y 4 cm de altura, ideal para decorar cualquier rincón con un toque de ternura. ¡Una forma perfecta de relajarte y disfrutar de un espacio especial!</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 6-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Ositos</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Ositos.jpeg" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">¡Dale un toque de ternura a tu hogar con nuestra vela Ositos! Con formas adorables de pequeños ositos, estas velas están disponibles en una variedad de colores y aromas. En esta ocasión, te ofrecemos el reconfortante olor a canela, que, combinado con la figura del osito, te transportará a un mundo de calidez y dulzura. Cada vela mide aproximadamente 7 cm de alto y 5 cm de ancho, perfecta para regalar o para tu propio disfrute.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
